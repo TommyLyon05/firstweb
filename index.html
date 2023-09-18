@@ -4,17 +4,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
         .wrap {
             width: 100%;
             height: 20px;
@@ -24,25 +15,25 @@
             font-size: 15px;
         }
 
+        body{
+            width: 100vw;
+            min-height: 100vh;
+        }
         .header {
             width: auto;
             height: 50px;
-            background-color: white;
+
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-size: 20px;
-            /* text-align: ; */
             color: black;
-        
             padding: 10px 0px 5px 30px;
-          
-            top: 0;
+
+
         }
 
-     .head {
-
-display: flex;
-align-items: center;
-text-align: center;
+        div.head {
+            text-align: right;
+            margin: 0px;
 
         }
 
@@ -136,7 +127,7 @@ text-align: center;
 
         .contt {
             width: auto;
-            height: 450px;
+       
             background-color: #F9FAFC;
             clear: both;
 
@@ -154,7 +145,9 @@ text-align: center;
             box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
         }
 
-        .cont2 {
+   
+
+        .cont3 ,  .cont4,    .cont2 {
             width: 18%;
             height: 250px;
             background-color: white;
@@ -164,43 +157,36 @@ text-align: center;
             box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
         }
 
-        .cont3 {
-            width: 18%;
-            height: 250px;
-            background-color: white;
-            float: left;
-            margin: 20px 15px;
-            padding: 20px;
-            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-        }
-
-        .cont4 {
-            width: 18%;
-            height: 250px;
-            background-color: white;
-            color: antiquewhite;
-            float: left;
-            margin: 15px 50px 20px 15px;
-            padding: 20px;
-            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-        }
+     
 
         .picformat {
-            height: 50px;
-            width: 200px;
+            align-self: center;
+align-items: center;
+justify-content: center;
+            width: 300px;
             margin: 0px 50px;
             color: gray;
             text-align: justify;
             font-family: Georgia, 'Times New Roman', Times, serif;
-
-            float: left;
+        }
+        .skills{
+            width: 300px;
+            height: 290px;
+            background-color: white;
+            margin: 20px 30px;
+            padding: 20px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
         }
 
-        .picformat2 {
-            height: 500px;
-            width: 100%;
-            margin: 0px 10px;
+      .picformatcontainer{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 10px auto;
 
+      }
+        .skillcontainer{
+position: relative;
         }
 
         #footer {
@@ -211,47 +197,28 @@ text-align: center;
             color: white;
             clear: both;
             padding: 20px 30px;
-            position: relative;
         }
 
         #img {
             height: 150px;
             width: 150px;
         }
-        .butmenu{
-            display: none;
-        }
 
-        @media (max-width:670px) {
-            body {
+
+        @media (max-width:567px) {
+         .skills{
+           width: 400px;
+           height: 200px;
+       
+         }  
+         .skillcontainer{
+       display: flex;
+         }
+
+
+            
+    }
         
-            }
-
-            .contt h1 {
-                font-size: 20px;
-                width: 100vw;
-                padding: 0;
-                text-align: center;
-
-
-            }
-
-            .picformat2 {
-                display: flex;
-
-            }
-
-            .contt {
-                display: flex;
-                flex-wrap: wrap;
-            }
-            .head{
-                display: none !important;
-            }
-            .butmenu{
-                display: block;
-            }
-        }
     </style>
 
     <!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
@@ -263,135 +230,124 @@ text-align: center;
 </head>
 
 <body>
-    <div>
-        <div class="wrap">
-            &#128222 08146426405 | &#9993; tommylyon05@gmail.com | No1 Ladipo street, Onward area, Ogo-oluwa, Osogbo,
-            Osun
-            State.
+    <div class="wrap">
+        &#128222 08146426405 | &#9993; tommylyon05@gmail.com | No1 Ladipo street, Onward area, Ogo-oluwa, Osogbo, Osun
+        State.</div>
+        <div class="d-flex py-2" style="justify-content: space-between;">
+    <div class="header" style="z-index: 100;">
+        <p style="margin: 0%;"><strong>TOMMY CONCEPT</strong></p>
+        <p style="color: purple; font-size: 15px; line-height: 0px; margin: 0%;">...making great differences and impact
+        </p>
+    </div>
+    <div class="head d-none d-md-flex">
+        <strong><a href="#.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+        <strong><a href="signup.html">SIGN UP</a>&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+        <strong><a href="#.html">ABOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+        <strong><a href="#.html">COURSES</a>&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+        <strong><a href="#.html">TRAINING</a>&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+        <strong><a href="#.html">CONTACT</a></strong>
+        <strong><a href="#.html" class="aa" style="color: white;">REGISTRATION</a></strong>
+
+    </div>
+    <button class="butmenu d-md-none mx-3">Menu</button>
+</div>
+    <div class="content">
+        <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+        <div id="wowslider-container3">
+            <div class="ws_images">
+                <ul>
+                    <li><img src="data3/images/pic2.jpg" alt="" title="" id="wows3_0" /></li>
+                    <li><a href="http://wowslider.net"><img src="data3/images/pic3.jpg" alt="bootstrap carousel"
+                                title="" id="wows3_1" /></a></li>
+                    <li><img src="data3/images/pic4.jpg" alt="HOME" title="HOME" id="wows3_2" />MANDATORY SKILLS This is
+                        the skills required by all job seeks by employer to have before seeking for any vacancies which
+                        is the basic tools for solving business challenges and been effective at work such as:
+                        Microsoft Word, Microsoft Excel, Microsoft Access, PowerPoint, communication etc.
+                        MANAGERIAL SKILLS This trains you on the management courses that […]</li>
+                </ul>
+            </div>
+            <div class="ws_bullets">
+                <div>
+                    <a href="#" title=""><span><img src="data3/tooltips/pic2.jpg" alt="" /></span></a>
+                    <a href="#" title=""><span><img src="data3/tooltips/pic3.jpg" alt="" /></span></a>
+                    <a href="#" title="HOME"><span><img src="data3/tooltips/pic4.jpg" alt="HOME" /></span></a>
+                </div>
+            </div>
+            <div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">bootstrap
+                    carousel</a> by WOWSlider.com v9.0m</div>
+            <div class="ws_shadow"></div>
         </div>
-        <div style="display: flex;justify-content: space-between; align-items: center;" class="navi">
-        <div class="header">
-            <p style="margin: 0%;"><strong>TOMMY CONCEPT</strong></p>
-            <p style="color: purple; font-size: 15px; line-height: 0px; margin: 0%;">...making great differences and
-                impact
+        <script type="text/javascript" src="engine3/wowslider.js"></script>
+        <script type="text/javascript" src="engine3/script.js"></script>
+        <!-- End WOWSlider.com BODY section -->
+        <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+
+
+
+
+    </div>
+    <div class="contt">
+        <div class=" py-4 container" style="font-size: 35px; color: purple; font-family: Arial, Helvetica, sans-serif; font-weight: 700; ">
+            BE EMPOWERED THROUGH OUR ICT SKILLS</div>
+            <div class="skillcontainer flex-column flex-sm-row" style="display: flex;justify-content: center;align-items: center; " >
+        <div class="cont11 skills text-light" >
+            <a href="#.html"
+                style=" font-size: 20px; color: purple; text-decoration: underline;"><strong>SALES</strong></a>
+            <p class="two">In other to give everyone the benefit to equip themselves and put their job or business on
+                the right track,
+                we have section Our training into two which are; Offline training Online training</p>
+        </div>
+        <div class="cont21 skills" >
+            <a href="#.html"
+                style=" font-size: 20px; color: purple; text-decoration: underline;"><strong>TRAINING</strong></a>
+            <p class="two">We gat you covered on Sales of different ICT gadgets, you can always count on us such as:
+                Laptop systems,
+                Desktop systems, Projector, Mouse both wired and wireless, Photocopier machine, Printers etc
             </p>
-        </div>
-        <div class="head">
-            <strong><a href="#.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-            <strong><a href="signup.html">SIGN UP</a>&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-            <strong><a href="#.html">ABOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-            <strong><a href="#.html">COURSES</a>&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-            <strong><a href="#.html">TRAINING</a>&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-            <strong><a href="#.html">CONTACT</a></strong>
-            <strong><a href="#.html" class="aa" style="color: white;">REGISTRATION</a></strong>
 
         </div>
-
-        <button class="butmenu">Menu</button>
-    </div>
-    </div>
-
-    <div>
-        <div class="content">
-            <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
-            <div id="wowslider-container3">
-                <div class="ws_images">
-                    <ul>
-                        <li><img src="data3/images/pic2.jpg" alt="" title="" id="wows3_0" /></li>
-                        <li><a href="http://wowslider.net"><img src="data3/images/pic3.jpg" alt="bootstrap carousel"
-                                    title="" id="wows3_1" /></a></li>
-                        <li><img src="data3/images/pic4.jpg" alt="HOME" title="HOME" id="wows3_2" />MANDATORY SKILLS
-                            This is
-                            the skills required by all job seeks by employer to have before seeking for any vacancies
-                            which
-                            is the basic tools for solving business challenges and been effective at work such as:
-                            Microsoft Word, Microsoft Excel, Microsoft Access, PowerPoint, communication etc.
-                            MANAGERIAL SKILLS This trains you on the management courses that […]</li>
-                    </ul>
-                </div>
-                <div class="ws_bullets">
-                    <div>
-                        <a href="#" title=""><span><img src="data3/tooltips/pic2.jpg" alt="" /></span></a>
-                        <a href="#" title=""><span><img src="data3/tooltips/pic3.jpg" alt="" /></span></a>
-                        <a href="#" title="HOME"><span><img src="data3/tooltips/pic4.jpg" alt="HOME" /></span></a>
-                    </div>
-                </div>
-                <div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">bootstrap
-                        carousel</a> by WOWSlider.com v9.0m</div>
-                <div class="ws_shadow"></div>
-            </div>
-            <script type="text/javascript" src="engine3/wowslider.js"></script>
-            <script type="text/javascript" src="engine3/script.js"></script>
-            <!-- End WOWSlider.com BODY section -->
-            <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
-
-
-
-
+        <div class="cont31 skills">
+            <a href="#.html"
+                style=" font-size: 20px; color: purple; text-decoration: underline;"><strong>SERVICES</strong></a>
+            <p class="two">BELOW ARE SOME OF OUR SERVICES ICT / COMPUTER TRAINING COMPUTER ACCESSORIES
+                / GADGETS GRAPHICS DESIGN WORK WEBSITE DESIGN WEBSITE MENTAINANCE BRANDING AND AWARD etc.</p>
         </div>
-        <div class="contt">
-            <h1 style="font-size: 35px; color: purple; font-family: Arial, Helvetica, sans-serif; text-align: left;">
-                BE EMPOWERED THROUGH OUR ICT SKILLS</h1>
-            <div class="cont1">
-                <a href="#.html"
-                    style=" font-size: 20px; color: purple; text-decoration: underline;"><strong>SALES</strong></a>
-                <p class="two">In other to give everyone the benefit to equip themselves and put their job or business
-                    on
-                    the right track,
-                    we have section Our training into two which are; Offline training Online training</p>
-            </div>
-            <div class="cont2">
-                <a href="#.html"
-                    style=" font-size: 20px; color: purple; text-decoration: underline;"><strong>TRAINING</strong></a>
-                <p class="two">We gat you covered on Sales of different ICT gadgets, you can always count on us such as:
-                    Laptop systems,
-                    Desktop systems, Projector, Mouse both wired and wireless, Photocopier machine, Printers etc
-                </p>
-
-            </div>
-            <div class="cont3">
-                <a href="#.html"
-                    style=" font-size: 20px; color: purple; text-decoration: underline;"><strong>SERVICES</strong></a>
-                <p class="two">BELOW ARE SOME OF OUR SERVICES ICT / COMPUTER TRAINING COMPUTER ACCESSORIES
-                    / GADGETS GRAPHICS DESIGN WORK WEBSITE DESIGN WEBSITE MENTAINANCE BRANDING AND AWARD etc.</p>
-            </div>
-            <div class="cont4">
-                <a href="#.html"
-                    style=" font-size: 20px; color: purple; text-decoration: underline;"><strong>CONSULTANCY</strong></a>
-                <p class="two">You can do more and achieve better than your present achievements,
-                    we can be of help and be part of your success story by we contributing into that which you are
-                    doing.
-                    Never hesitate to contact us today for us to assist and make that dream comes reality.</p>
-            </div>
-        </div>
-        <div class="picformat2" style="">
-            <div class="picformat"><img src="ms.png" id="img">
-                <p>
-                <h4>MANDATORY SKILLS</h4>
-                This is the skills required by all job seeks by employer to have before seeking for any vacancies
-                which is the basic tools for solving business challenges and been effective at work such as:
-                Microsoft Word, Microsoft Excel, Microsoft Access, PowerPoint, communication etc. </p>
-            </div>&nbsp;&nbsp;&nbsp;&nbsp;
-            <div class="picformat"><img src="ppl.png" id="img">
-                <h4> MANAGERIAL SKILLS</h4>
-                <p>This trains you on the management courses that helps you know the essential information's needed when
-                    you
-                    need a job or when you want to setup a business.
-                    Businesses needs compentencies of every individual which can be adopt from HRM, PMP, CRM</p>
-            </div>&nbsp;&nbsp;&nbsp;&nbsp;
-            <div class="picformat"><img src="int2.jpeg" id="img">
-                <p>
-                <h4>ADVANCE SKILLS </h4>
-                There is always a need in every organization base on there job to have an expert to handle jobs or
-                services
-                for quality.
-                There are a lot of skills that can be put in place such as: Python, Java, Graphics, Web Development,
-                UI/UX
-                </p>
-            </div>&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="cont41 skills">
+            <a href="#.html"
+                style=" font-size: 20px; color: purple; text-decoration: underline;"><strong>CONSULTANCY</strong></a>
+            <p class="two">You can do more and achieve better than your present achievements,
+                we can be of help and be part of your success story by we contributing into that which you are doing.
+                Never hesitate to contact us today for us to assist and make that dream comes reality.</p>
         </div>
     </div>
-    <div id="footer">TOMMY CONCEPTS &copy; Copyright, 2023</div>
+    </div>
+    <div class="picformatcontainer">
+        <div class="picformat"><img style="align-self: center;width: inherit;" src="ms.png" id="img">
+            <p>
+            <h4>MANDATORY SKILLS</h4>
+            This is the skills required by all job seeks by employer to have before seeking for any vacancies
+            which is the basic tools for solving business challenges and been effective at work such as:
+            Microsoft Word, Microsoft Excel, Microsoft Access, PowerPoint, communication etc. </p>
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="picformat"><img  style="align-self: center;width: inherit;" src="ppl.png" id="img">
+            <h4> MANAGERIAL SKILLS</h4>
+            <p>This trains you on the management courses that helps you know the essential information's needed when you
+                need a job or when you want to setup a business.
+                Businesses needs compentencies of every individual which can be adopt from HRM, PMP, CRM</p>
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="picformat"><img  style="align-self: center;width: inherit;" src="int2.jpeg" id="img">
+            <p>
+            <h4>ADVANCE SKILLS </h4>
+            There is always a need in every organization base on there job to have an expert to handle jobs or services
+            for quality.
+            There are a lot of skills that can be put in place such as: Python, Java, Graphics, Web Development, UI/UX
+            </p>
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+   
+ 
+
+    <div id="footer" class="text-center " style="position: relative;">TOMMY CONCEPTS &copy; Copyright, 2023</div>
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>
